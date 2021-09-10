@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'regular';
+	src: local('OpenSans-Regular'),
+		url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'semiBold';
+	src: local('OpenSans-SemiBold'),
+		url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'bold';
+	src: local('OpenSans-Bold'),
+		url('./fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+:root {
+	/* 	Fonts 	*/
+	--regular: 'regular';
+	--semibold: 'semiBold';
+	--bold: 'bold';
+	--defaultSize: 16px;
+	--smallSize: 4px;
+
+	/* 	Colors 	*/
+	--primary: #FE5D2A;
+	--secondary: #000000;
+	--white: #FFFFFF;
+	--grey: #FAFAFA;
+}

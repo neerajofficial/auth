@@ -1,0 +1,45 @@
+.root {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.image {
+	display: none;
+}
+
+.form {
+	position: relative;
+}
+
+.message {
+	justify-content: center;
+	display: flex;
+}
+.message p {
+	background: #f23;
+	text-align: center;
+	color: #fff;
+	font-family: var(--semibold);
+	padding: 0.2rem 1rem;
+}
+
+@media only screen and (min-width:  600px) {
+	.root {
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.image {
+		display: flex;
+		background: url('./../../assets/images/image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width:  768px) {
+	.root {
+		grid-template-columns: 2fr 1fr;
+	}
+}

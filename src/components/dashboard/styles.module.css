@@ -1,0 +1,9 @@
+.root {
+	background: #fff;
+
+}
+.root h1 {
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0;
+}

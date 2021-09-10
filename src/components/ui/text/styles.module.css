@@ -1,0 +1,13 @@
+@import url('./../../../assets/__settings.css');
+
+.h4 {
+	padding: 1rem 0;
+	font-size: 1.8rem;
+	font-family: var(--semibold);
+}
+
+.helperText {
+	font-size: 0.8rem;
+	color: var(--primary);
+	padding: 0.2rem 1rem;
+}

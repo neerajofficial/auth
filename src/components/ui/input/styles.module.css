@@ -1,0 +1,38 @@
+@import url('./../../../assets/__settings.css');
+
+.input {
+	width: 100%;
+	display: block;
+	padding: 0.5rem 1rem;
+}
+
+.input label {
+	font-family: var(--semibold);
+	font-size: 0.9rem;
+	padding: 0.5rem 0;
+}
+
+.input input {
+	width: 100%;
+	border: none;
+	display: block;
+	border-bottom: 1px solid #55555555;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+	font-family: var(--semibold);
+	color: var(--secondary);
+}
+
+.input input::placeholder {
+	color: var(--secondary);
+	opacity: 0.6;
+	font-size: 1rem;
+	font-family: var(--regular);
+}
+
+.input input:focus,
+.input input:hover,
+.input input:active {
+	outline: none;
+	border-bottom: 1px solid #FE5D2AAA;
+}

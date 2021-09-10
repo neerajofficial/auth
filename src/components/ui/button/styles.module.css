@@ -1,0 +1,48 @@
+@import url('./../../../assets/__settings.css');
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 0.5rem 2rem;
+}
+.container .button {
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	font-family: var(--semibold);
+	font-size: 1rem;
+	background: none;
+	cursor: pointer;
+}
+.container .contained {
+	width: 100%;
+	background: #00539C;
+	color: var(--white);
+	padding: 0.5rem 0;
+	border-radius: 0.5rem;
+	box-shadow: 4px 4px 12px #00539C22;
+}
+
+.container .button:hover {
+	background: #00229C;
+}
+
+.container .basic {
+	font-family: var(--semibold);
+	font-size: 0.9rem;
+	color: #00229C;
+	margin-top: 2rem;
+}
+
+.container .basic:hover {
+	background: #fff;
+	color: #000;
+}
+
+.container .secondary, 
+.container .secondary:hover {
+	padding: 0;
+	background: #fff;
+}
