@@ -3,6 +3,9 @@ import FromControl from './../../ui/formControl'
 import Button from './../../ui/button'
 import Input from './../../ui/input'
 import Text from './../../ui/text'
+import styles from './styles.module.css'
+import eyeOpen from './../../../assets/icons/eyeOpen.svg'
+import eyeClose from './../../../assets/icons/eyeClose.svg'
 
 const AuthForm = ({ formik, showPassword, showPasswordClicked, buttonText }) => {
 	return (
@@ -31,6 +34,9 @@ const AuthForm = ({ formik, showPassword, showPasswordClicked, buttonText }) => 
 					onChange={formik.handleChange}
 					onBlur={formik.handleBlur}
 				/>
+				<div className={styles.showPassword}>
+					<img src={showPassword ? eyeOpen : eyeClose} alt="show" onClick={showPasswordClicked}/>
+				</div>
 				<Text variant="helperText">
 					{formik.touched.password && formik.errors.password}
 				</Text>
